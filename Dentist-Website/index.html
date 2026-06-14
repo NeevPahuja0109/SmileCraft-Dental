@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="SmileCraft Dental – Premium dental care in the heart of the city. Specializing in cosmetic dentistry, dental implants, veneers, Invisalign, and more. Book your appointment today." />
+  <meta name="keywords" content="dental clinic, cosmetic dentistry, dental implants, veneers, Invisalign, teeth whitening, SmileCraft Dental" />
+  <meta name="author" content="SmileCraft Dental" />
+  <meta property="og:title" content="SmileCraft Dental | Creating Confident Smiles Through Modern Dentistry" />
+  <meta property="og:description" content="Experience world-class dental care with a personal touch. SmileCraft Dental combines cutting-edge technology with compassionate care." />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <title>SmileCraft Dental | Creating Confident Smiles Through Modern Dentistry</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Scroll Progress Bar -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- Floating Buttons -->
+  <a href="tel:+18005556789" class="float-call" aria-label="Call us now">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.11-.27c1.21.49 2.53.76 3.88.76a1 1 0 011 1V20a1 1 0 01-1 1C9.61 21 3 14.39 3 6a1 1 0 011-1h3.5a1 1 0 011 1c0 1.35.27 2.67.76 3.88a1 1 0 01-.27 1.11l-2.37 2.8z"/></svg>
+  </a>
+  <a href="#appointment" class="float-appt" aria-label="Book appointment">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3h-1V1h-2v2H8V1H6v2H5a2 2 0 00-2 2v16a2 2 0 002 2h14a2 2 0 002-2V5a2 2 0 00-2-2zm0 18H5V9h14v12zM5 7V5h14v2H5zm2 4h10v2H7zm0 4h7v2H7z"/></svg>
+  </a>
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/></svg>
+  </button>
+
+  <!-- Navigation -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="index.html" class="nav__logo">
+        <span class="logo-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" fill="none">
+            <path d="M20 4C13 4 7 10 7 17c0 4.5 2.2 8.5 5.5 11l1.5 8h12l1.5-8C30.8 25.5 33 21.5 33 17c0-7-6-13-13-13z" fill="#1e3a5f"/>
+            <path d="M14 17c0-3.3 2.7-6 6-6s6 2.7 6 6" stroke="#3b82f6" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span class="logo-text">SmileCraft<span>Dental</span></span>
+      </a>
+
+      <ul class="nav__menu" id="navMenu">
+        <li><a href="#home" class="nav__link">Home</a></li>
+        <li><a href="#about" class="nav__link">About</a></li>
+        <li><a href="#services" class="nav__link">Services</a></li>
+        <li><a href="#gallery" class="nav__link">Gallery</a></li>
+        <li><a href="#testimonials" class="nav__link">Reviews</a></li>
+        <li><a href="#contact" class="nav__link">Contact</a></li>
+        <li><a href="#appointment" class="nav__link nav__cta">Book Appointment</a></li>
+      </ul>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="home">
+      <div class="hero__bg">
+        <img src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=1600&q=80" alt="Professional dental clinic" class="hero__img" />
+        <div class="hero__overlay"></div>
+      </div>
+      <div class="container hero__content">
+        <div class="hero__text">
+          <span class="hero__badge hero-anim" data-delay="0">
+            <span class="hero__badge-dot"></span>
+            Trusted by 12,000+ Patients
+          </span>
+          <h1 class="hero__headline hero-anim" data-delay="150">
+            Your Smile Deserves<br /><span class="gradient-text animated-gradient">World-Class Care</span>
+          </h1>
+          <p class="hero__sub hero-anim" data-delay="300">We blend advanced dental technology with a warm, patient-first approach to deliver results that look natural, feel comfortable, and last a lifetime.</p>
+          <div class="hero__actions hero-anim" data-delay="450">
+            <a href="#appointment" class="btn btn--primary btn--lg ripple-btn">Book Free Consultation</a>
+            <a href="tel:+18005556789" class="btn btn--outline btn--lg">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.11-.27c1.21.49 2.53.76 3.88.76a1 1 0 011 1V20a1 1 0 01-1 1C9.61 21 3 14.39 3 6a1 1 0 011-1h3.5a1 1 0 011 1c0 1.35.27 2.67.76 3.88a1 1 0 01-.27 1.11l-2.37 2.8z"/></svg>
+              (800) 555-6789
+            </a>
+          </div>
+          <div class="hero__rating hero-anim" data-delay="600">
+            <div class="stars">★★★★★</div>
+            <span>4.9 / 5 based on <strong>1,240 Google reviews</strong></span>
+          </div>
+        </div>
+        <div class="hero__card hero-anim" data-delay="200">
+          <div class="hero__card-inner floating">
+            <img src="assets/dr-sara.jpg" alt="Dr. Sarah Mitchell – Lead Dentist" class="hero__card-img" />
+            <div class="hero__card-info">
+              <strong>Dr. Sarah Mitchell</strong>
+              <span>Lead Cosmetic Dentist, DDS, FAGD</span>
+              <a href="#our-team" class="hero__card-link">Meet the team →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero__scroll">
+        <span>Scroll to explore</span>
+        <div class="scroll-indicator"></div>
+      </div>
+    </section>
+
+    <!-- ===== TRUST BAR ===== -->
+    <section class="trust-bar">
+      <div class="container trust-bar__grid">
+
+        <div class="trust-item reveal-up">
+          <div class="trust-item__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 4a3 3 0 110 6 3 3 0 010-6zm0 13c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08s5.97 1.09 6 3.08A7.232 7.232 0 0112 18z"/></svg>
+          </div>
+          <div class="trust-item__body">
+            <div class="trust-item__number">
+              <span class="counter" data-target="18">0</span><span class="trust-item__suffix">+</span>
+            </div>
+            <p class="trust-item__label">Years of Excellence</p>
+          </div>
+        </div>
+
+        <div class="trust-item reveal-up" data-delay="100">
+          <div class="trust-item__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
+          </div>
+          <div class="trust-item__body">
+            <div class="trust-item__number">
+              <span class="counter" data-target="12">0</span><span class="trust-item__suffix">K+</span>
+            </div>
+            <p class="trust-item__label">Patients Served</p>
+          </div>
+        </div>
+
+        <div class="trust-item reveal-up" data-delay="200">
+          <div class="trust-item__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+          </div>
+          <div class="trust-item__body">
+            <div class="trust-item__number">
+              <span class="counter" data-target="1240">0</span>
+            </div>
+            <p class="trust-item__label">Five-Star Reviews</p>
+          </div>
+        </div>
+
+        <div class="trust-item reveal-up" data-delay="300">
+          <div class="trust-item__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67V7z"/></svg>
+          </div>
+          <div class="trust-item__body">
+            <div class="trust-item__number trust-item__number--text">
+              <span>24/7</span>
+            </div>
+            <p class="trust-item__label">Emergency Support</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== SERVICES ===== -->
+    <section class="services" id="services">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <span class="section-tag">What We Offer</span>
+          <h2 class="section-title">Comprehensive Dental Services<br /><span class="gradient-text">Tailored to You</span></h2>
+          <p class="section-sub">From routine cleanings to full smile makeovers, our experienced team delivers exceptional results using the latest dental technologies.</p>
+        </div>
+        <div class="services__grid">
+
+          <div class="service-card reveal-up">
+            <div class="service-card__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none">
+                <circle cx="24" cy="24" r="20" fill="#EFF6FF"/>
+                <path d="M24 14c-5.5 0-10 4.5-10 10s4.5 10 10 10 10-4.5 10-10" stroke="#1e3a5f" stroke-width="2.5" stroke-linecap="round"/>
+                <path d="M28 18l4-4m0 0l-3-3m3 3l-3 3" stroke="#3b82f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3>Teeth Whitening</h3>
+            <p>Achieve a brilliantly bright smile with our professional-grade whitening treatments — up to 8 shades whiter in a single session.</p>
+            <div class="service-card__meta">
+              <span class="badge badge--blue">Most Popular</span>
+              <span class="service-card__price">From $299</span>
+            </div>
+            <a href="#appointment" class="service-card__link">Book Now →</a>
+          </div>
+
+          <div class="service-card reveal-up" data-delay="100">
+            <div class="service-card__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none">
+                <circle cx="24" cy="24" r="20" fill="#EFF6FF"/>
+                <rect x="18" y="14" width="12" height="20" rx="6" stroke="#1e3a5f" stroke-width="2.5"/>
+                <path d="M21 34v4m6-4v4" stroke="#3b82f6" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3>Dental Implants</h3>
+            <p>Permanent, natural-looking tooth replacements that restore your confidence and functionality — designed to last decades.</p>
+            <div class="service-card__meta">
+              <span class="badge badge--gold">Premium</span>
+              <span class="service-card__price">From $1,999</span>
+            </div>
+            <a href="#appointment" class="service-card__link">Book Now →</a>
+          </div>
+
+          <div class="service-card reveal-up" data-delay="200">
+            <div class="service-card__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none">
+                <circle cx="24" cy="24" r="20" fill="#EFF6FF"/>
+                <path d="M16 28c0-4.4 3.6-8 8-8s8 3.6 8 8" stroke="#1e3a5f" stroke-width="2.5" stroke-linecap="round"/>
+                <path d="M20 20v-4a4 4 0 018 0v4" stroke="#3b82f6" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3>Porcelain Veneers</h3>
+            <p>Ultra-thin, custom-crafted porcelain shells that transform chipped, stained, or misaligned teeth into a flawless smile.</p>
+            <div class="service-card__meta">
+              <span class="badge badge--navy">Smile Makeover</span>
+              <span class="service-card__price">From $899/tooth</span>
+            </div>
+            <a href="#appointment" class="service-card__link">Book Now →</a>
+          </div>
+
+          <div class="service-card reveal-up" data-delay="100">
+            <div class="service-card__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none">
+                <circle cx="24" cy="24" r="20" fill="#EFF6FF"/>
+                <path d="M17 20h14M17 24h14M17 28h10" stroke="#1e3a5f" stroke-width="2.5" stroke-linecap="round"/>
+                <rect x="15" y="16" width="18" height="16" rx="2" stroke="#3b82f6" stroke-width="2"/>
+              </svg>
+            </div>
+            <h3>Invisalign®</h3>
+            <p>Discreet, removable clear aligners that straighten your teeth comfortably — no metal brackets, no dietary restrictions.</p>
+            <div class="service-card__meta">
+              <span class="badge badge--blue">Certified Provider</span>
+              <span class="service-card__price">From $3,499</span>
+            </div>
+            <a href="#appointment" class="service-card__link">Book Now →</a>
+          </div>
+
+          <div class="service-card reveal-up" data-delay="200">
+            <div class="service-card__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none">
+                <circle cx="24" cy="24" r="20" fill="#EFF6FF"/>
+                <path d="M24 16v16M16 24h16" stroke="#1e3a5f" stroke-width="2.5" stroke-linecap="round"/>
+                <circle cx="24" cy="24" r="6" stroke="#3b82f6" stroke-width="2"/>
+              </svg>
+            </div>
+            <h3>Root Canal Therapy</h3>
+            <p>Pain-free, precision root canal treatment using rotary endodontics and digital imaging — save your natural tooth comfortably.</p>
+            <div class="service-card__meta">
+              <span class="badge badge--navy">Pain-Free</span>
+              <span class="service-card__price">From $799</span>
+            </div>
+            <a href="#appointment" class="service-card__link">Book Now →</a>
+          </div>
+
+          <div class="service-card reveal-up" data-delay="300">
+            <div class="service-card__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none">
+                <circle cx="24" cy="24" r="20" fill="#EFF6FF"/>
+                <path d="M20 14h8l2 6-4 2-4-2 2-6z" stroke="#1e3a5f" stroke-width="2.5" stroke-linejoin="round"/>
+                <path d="M18 22l-2 8h16l-2-8" stroke="#3b82f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3>General Dentistry</h3>
+            <p>Comprehensive oral health care including exams, cleanings, fillings, and preventive treatments to keep your smile healthy for life.</p>
+            <div class="service-card__meta">
+              <span class="badge badge--blue">Preventive</span>
+              <span class="service-card__price">From $149</span>
+            </div>
+            <a href="#appointment" class="service-card__link">Book Now →</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section class="about" id="about">
+      <div class="container about__grid">
+        <div class="about__images reveal-left">
+          <img src="assets/dr-sara.jpg" alt="Dr. Sarah Mitchell" class="about__img about__img--main" />
+          <div class="about__badge-card">
+            <strong>18</strong>
+            <span>Years of<br/>Excellence</span>
+          </div>
+        </div>
+        <div class="about__content reveal-right">
+          <span class="section-tag">About Us</span>
+          <h2 class="section-title">Dentistry Elevated to<br /><span class="gradient-text">An Art Form</span></h2>
+          <p class="about__lead">Founded in 2006, SmileCraft Dental was built on a simple belief: every patient deserves access to exceptional dental care in an environment that feels welcoming, not clinical.</p>
+          <p class="about__body">Led by Dr. Sarah Mitchell — a Fellow of the Academy of General Dentistry with advanced training from New York University College of Dentistry — our team combines decades of clinical expertise with the latest digital dentistry innovations to create smiles that truly transform lives.</p>
+          <div class="about__credentials">
+            <div class="credential">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/></svg>
+              <div>
+                <strong>DDS, FAGD Certified</strong>
+                <span>NYU College of Dentistry</span>
+              </div>
+            </div>
+            <div class="credential">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/></svg>
+              <div>
+                <strong>Invisalign Diamond Provider</strong>
+                <span>Top 1% of Providers Nationally</span>
+              </div>
+            </div>
+            <div class="credential">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/></svg>
+              <div>
+                <strong>American Dental Association</strong>
+                <span>Member since 2006</span>
+              </div>
+            </div>
+          </div>
+          <a href="#our-team" class="btn btn--primary ripple-btn">Meet Our Team</a>
+        </div>
+      </div>
+
+      <!-- Team -->
+      <div class="container team" id="our-team">
+        <div class="section-header reveal-up">
+          <span class="section-tag">Our Specialists</span>
+          <h2 class="section-title">Meet the Experts<br /><span class="gradient-text">Behind Your Smile</span></h2>
+        </div>
+        <div class="team__grid">
+          <div class="team-card reveal-up">
+            <img src="assets/dr-sara.jpg" alt="Dr. Sarah Mitchell" />
+            <div class="team-card__info">
+              <h3>Dr. Sarah Mitchell</h3>
+              <span>Lead Cosmetic Dentist</span>
+              <p>DDS, FAGD · 18 years experience · Invisalign Diamond Provider</p>
+            </div>
+          </div>
+          <div class="team-card reveal-up" data-delay="100">
+            <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=500&q=80" alt="Dr. James Carter" />
+            <div class="team-card__info">
+              <h3>Dr. James Carter</h3>
+              <span>Implant & Oral Surgeon</span>
+              <p>DMD, ABOI · 14 years experience · Certified Implantologist</p>
+            </div>
+          </div>
+          <div class="team-card reveal-up" data-delay="200">
+            <img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=500&q=80" alt="Dr. Priya Sharma" />
+            <div class="team-card__info">
+              <h3>Dr. Priya Sharma</h3>
+              <span>Orthodontist</span>
+              <p>DMD, MS Orthodontics · 11 years experience · Clear Aligner Specialist</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== GALLERY – Before/After Comparison Slider ===== -->
+    <section class="gallery" id="gallery">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <span class="section-tag">Smile Gallery</span>
+          <h2 class="section-title">Real Results,<br /><span class="gradient-text">Real Transformations</span></h2>
+          <p class="section-sub">Drag the centre handle left or right to reveal each patient's transformation. Every case treated by our expert team.</p>
+        </div>
+
+        <!-- Case Tabs -->
+        <div class="comp-tabs reveal-up" role="tablist">
+          <button class="comp-tab active" data-index="0" role="tab" aria-selected="true">
+            <span class="comp-tab__num">01</span>
+            <span class="comp-tab__name">Porcelain Veneers</span>
+          </button>
+          <button class="comp-tab" data-index="1" role="tab" aria-selected="false">
+            <span class="comp-tab__num">02</span>
+            <span class="comp-tab__name">Teeth Whitening</span>
+          </button>
+          <button class="comp-tab" data-index="2" role="tab" aria-selected="false">
+            <span class="comp-tab__num">03</span>
+            <span class="comp-tab__name">Full Smile Makeover</span>
+          </button>
+        </div>
+
+        <!-- Comparison Stage -->
+        <div class="comp-stage reveal-up">
+
+          <!-- Slide 0: Veneers -->
+          <div class="comp-slide active" data-slide="0">
+            <div class="comparison-slider" id="compSlider0">
+              <div class="comp-before">
+                <img src="assets/veneers-ba.jpg" alt="Before porcelain veneers treatment" draggable="false" style="object-position: center 20%;" />
+              </div>
+              <div class="comp-after">
+                <img src="assets/veneers-ba.jpg" alt="After porcelain veneers treatment" draggable="false" style="object-position: center 65%;" />
+              </div>
+              <div class="comp-divider">
+                <div class="comp-divider__line"></div>
+                <button class="comp-divider__btn" aria-label="Drag to compare before and after">
+                  <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M8.5 5L5 8.5l3.5 3.5-3.5 3.5L5 19l7-7-7-7zm7 0l7 7-7 7-1.5-1.5L18 12l-3.5-3.5L16 7l-1.5-1.5z"/></svg>
+                </button>
+              </div>
+              <span class="comp-label comp-label--before">Before</span>
+              <span class="comp-label comp-label--after">After</span>
+            </div>
+            <div class="comp-info">
+              <div class="comp-info__text">
+                <h4>Porcelain Veneers</h4>
+                <p>10 upper porcelain veneers crafted for a perfect, natural look. Patient treated by Dr. Sarah Mitchell. Treatment duration: 3 weeks.</p>
+              </div>
+              <div class="comp-info__tags">
+                <span>Veneers</span>
+                <span>Cosmetic</span>
+                <span>3 Weeks</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 1: Whitening -->
+          <div class="comp-slide" data-slide="1">
+            <div class="comparison-slider" id="compSlider1">
+              <div class="comp-before">
+                <img src="assets/teeth-whiten.jpg" alt="Before teeth whitening" draggable="false" style="height:200%;object-fit:cover;object-position:center top;" />
+              </div>
+              <div class="comp-after">
+                <img src="assets/teeth-whiten.jpg" alt="After teeth whitening" draggable="false" style="height:200%;object-fit:cover;object-position:center bottom;transform:translateY(-50%);" />
+              </div>
+              <div class="comp-divider">
+                <div class="comp-divider__line"></div>
+                <button class="comp-divider__btn" aria-label="Drag to compare before and after">
+                  <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M8.5 5L5 8.5l3.5 3.5-3.5 3.5L5 19l7-7-7-7zm7 0l7 7-7 7-1.5-1.5L18 12l-3.5-3.5L16 7l-1.5-1.5z"/></svg>
+                </button>
+              </div>
+              <span class="comp-label comp-label--before">Before</span>
+              <span class="comp-label comp-label--after">After</span>
+            </div>
+            <div class="comp-info">
+              <div class="comp-info__text">
+                <h4>Professional Teeth Whitening</h4>
+                <p>In-office Zoom whitening — 8 shades brighter in a single 90-minute session. Patient: David R., Austin TX.</p>
+              </div>
+              <div class="comp-info__tags">
+                <span>Whitening</span>
+                <span>1 Session</span>
+                <span>8 Shades Brighter</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2: Smile Makeover -->
+          <div class="comp-slide" data-slide="2">
+            <div class="comparison-slider" id="compSlider2">
+              <div class="comp-before">
+                <img src="assets/smile-makeover.jpg" alt="Before full smile makeover" draggable="false" style="height:200%;object-fit:cover;object-position:center top;" />
+              </div>
+              <div class="comp-after">
+                <img src="assets/smile-makeover.jpg" alt="After full smile makeover" draggable="false" style="height:200%;object-fit:cover;object-position:center bottom;transform:translateY(-50%);" />
+              </div>
+              <div class="comp-divider">
+                <div class="comp-divider__line"></div>
+                <button class="comp-divider__btn" aria-label="Drag to compare before and after">
+                  <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M8.5 5L5 8.5l3.5 3.5-3.5 3.5L5 19l7-7-7-7zm7 0l7 7-7 7-1.5-1.5L18 12l-3.5-3.5L16 7l-1.5-1.5z"/></svg>
+                </button>
+              </div>
+              <span class="comp-label comp-label--before">Before</span>
+              <span class="comp-label comp-label--after">After</span>
+            </div>
+            <div class="comp-info">
+              <div class="comp-info__text">
+                <h4>Full Smile Makeover</h4>
+                <p>Complete transformation combining Invisalign alignment, professional whitening and 6 upper veneers. Treatment: 8 months.</p>
+              </div>
+              <div class="comp-info__tags">
+                <span>Invisalign</span>
+                <span>Veneers</span>
+                <span>8 Months</span>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- /comp-stage -->
+
+        <p class="comp-hint reveal-up">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M9 11.24V7.5C9 6.12 10.12 5 11.5 5S14 6.12 14 7.5v3.74c1.21-.81 2-2.18 2-3.74C16 5.01 13.99 3 11.5 3S7 5.01 7 7.5c0 1.56.79 2.93 2 3.74zm9.84 4.63l-4.54-2.26c-.17-.07-.35-.11-.54-.11H13v-6c0-.83-.67-1.5-1.5-1.5S10 6.67 10 7.5v10.74l-3.43-.72c-.08-.01-.15-.03-.24-.03-.31 0-.59.13-.79.33l-.79.8 4.94 4.94c.27.27.65.44 1.06.44h6.79c.75 0 1.33-.55 1.44-1.28l.75-5.27c.01-.07.02-.14.02-.2 0-.62-.38-1.16-.91-1.38z"/></svg>
+          Drag the centre handle left or right to compare before &amp; after
+        </p>
+
+      </div>
+    </section>
+
+    <!-- ===== TESTIMONIALS ===== -->
+    <section class="testimonials" id="testimonials">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <span class="section-tag">Patient Stories</span>
+          <h2 class="section-title">What Our Patients<br /><span class="gradient-text">Say About Us</span></h2>
+          <p class="section-sub">Don't take our word for it — hear from the thousands of patients who have trusted SmileCraft Dental with their smiles.</p>
+        </div>
+
+        <div class="testimonials__grid">
+
+          <div class="testimonial-card reveal-up">
+            <div class="testimonial-card__stars">★★★★★</div>
+            <p>"I'd been self-conscious about my smile for years. After just three visits for veneers, I have the smile I've always dreamed of. Dr. Mitchell is truly an artist. The attention to detail is extraordinary."</p>
+            <div class="testimonial-card__author">
+              <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=80&q=80" alt="Jennifer A." />
+              <div>
+                <strong>Jennifer A.</strong>
+                <span>Porcelain Veneers Patient</span>
+                <span class="author-location">New York, NY</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card reveal-up" data-delay="100">
+            <div class="testimonial-card__stars">★★★★★</div>
+            <p>"I was terrified of the dentist until I came to SmileCraft. The team made me feel so at ease. My Invisalign treatment was seamless and the results are absolutely incredible — I can't stop smiling!"</p>
+            <div class="testimonial-card__author">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&q=80" alt="Marcus T." />
+              <div>
+                <strong>Marcus T.</strong>
+                <span>Invisalign Patient</span>
+                <span class="author-location">Los Angeles, CA</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card reveal-up" data-delay="200">
+            <div class="testimonial-card__stars">★★★★★</div>
+            <p>"Had a dental implant done by Dr. Carter — the procedure was entirely pain-free. It looks and feels exactly like my natural tooth. The clinic is immaculate and the staff are genuinely caring."</p>
+            <div class="testimonial-card__author">
+              <img src="https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?w=80&q=80" alt="Susan L." />
+              <div>
+                <strong>Susan L.</strong>
+                <span>Dental Implant Patient</span>
+                <span class="author-location">Chicago, IL</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card reveal-up">
+            <div class="testimonial-card__stars">★★★★★</div>
+            <p>"The whitening treatment was phenomenal — 8 shades in one session! I walked in with stained teeth from years of coffee and walked out with a brilliant, natural-looking white smile. Totally worth it."</p>
+            <div class="testimonial-card__author">
+              <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=80&q=80" alt="David R." />
+              <div>
+                <strong>David R.</strong>
+                <span>Whitening Patient</span>
+                <span class="author-location">Austin, TX</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card reveal-up" data-delay="100">
+            <div class="testimonial-card__stars">★★★★★</div>
+            <p>"I flew in from Toronto specifically for my smile makeover — and it was absolutely worth every mile. The digital smile design preview blew my mind. The whole team exceeded every expectation."</p>
+            <div class="testimonial-card__author">
+              <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=80&q=80" alt="Aisha M." />
+              <div>
+                <strong>Aisha M.</strong>
+                <span>Smile Makeover Patient</span>
+                <span class="author-location">Toronto, Canada</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card reveal-up" data-delay="200">
+            <div class="testimonial-card__stars">★★★★★</div>
+            <p>"Emergency appointment on a Sunday — they answered immediately and saw me within the hour. Exceptional emergency care. The root canal was completely pain-free. I cannot recommend SmileCraft enough."</p>
+            <div class="testimonial-card__author">
+              <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=80&q=80" alt="Robert K." />
+              <div>
+                <strong>Robert K.</strong>
+                <span>Emergency &amp; Root Canal</span>
+                <span class="author-location">Miami, FL</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="testimonials__cta reveal-up">
+          <div class="google-badge">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="32" height="32"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+            <div>
+              <strong>4.9 out of 5</strong>
+              <span>Based on 1,240 Google Reviews</span>
+            </div>
+          </div>
+          <a href="#appointment" class="btn btn--primary ripple-btn">Join Our Happy Patients</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== APPOINTMENT ===== -->
+    <section class="appointment" id="appointment">
+      <div class="container appointment__grid">
+        <div class="appointment__info reveal-left">
+          <span class="section-tag">Book a Visit</span>
+          <h2 class="section-title">Your Journey to a<br /><span class="gradient-text">Perfect Smile Starts Here</span></h2>
+          <p>Schedule your complimentary consultation today. Our treatment coordinators will guide you through your personalised smile plan with transparent pricing and flexible payment options.</p>
+          <ul class="appointment__perks">
+            <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>Free initial consultation (value $150)</li>
+            <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>Digital smile design preview</li>
+            <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>0% financing available (12–24 months)</li>
+            <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>All major insurances accepted</li>
+            <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>Same-day emergency appointments</li>
+          </ul>
+          <div class="appointment__contact-info">
+            <a href="tel:+18005556789"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.11-.27c1.21.49 2.53.76 3.88.76a1 1 0 011 1V20a1 1 0 01-1 1C9.61 21 3 14.39 3 6a1 1 0 011-1h3.5a1 1 0 011 1c0 1.35.27 2.67.76 3.88a1 1 0 01-.27 1.11l-2.37 2.8z"/></svg>(800) 555-6789</a>
+            <a href="mailto:hello@smilecraftdental.com"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>hello@smilecraftdental.com</a>
+          </div>
+        </div>
+
+        <div class="appointment__form-wrap reveal-right">
+          <form class="appointment-form" id="appointmentForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fname">First Name *</label>
+                <input type="text" id="fname" name="fname" placeholder="Jane" required />
+                <span class="form-error" id="fnameError"></span>
+              </div>
+              <div class="form-group">
+                <label for="lname">Last Name *</label>
+                <input type="text" id="lname" name="lname" placeholder="Smith" required />
+                <span class="form-error" id="lnameError"></span>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" placeholder="jane@example.com" required />
+                <span class="form-error" id="emailError"></span>
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number *</label>
+                <input type="tel" id="phone" name="phone" placeholder="(555) 000-0000" required />
+                <span class="form-error" id="phoneError"></span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="service">Service Interested In *</label>
+              <select id="service" name="service" required>
+                <option value="">Select a service...</option>
+                <option value="whitening">Teeth Whitening</option>
+                <option value="implants">Dental Implants</option>
+                <option value="veneers">Porcelain Veneers</option>
+                <option value="invisalign">Invisalign®</option>
+                <option value="rootcanal">Root Canal Therapy</option>
+                <option value="general">General Dentistry / Check-up</option>
+                <option value="emergency">Emergency Appointment</option>
+                <option value="other">Other / Not Sure Yet</option>
+              </select>
+              <span class="form-error" id="serviceError"></span>
+            </div>
+            <div class="form-group">
+              <label for="date">Preferred Appointment Date *</label>
+              <input type="date" id="date" name="date" required />
+              <span class="form-error" id="dateError"></span>
+            </div>
+            <div class="form-group">
+              <label for="message">Tell Us About Your Smile Goals</label>
+              <textarea id="message" name="message" placeholder="Share any concerns, questions, or information you'd like us to know before your visit..." rows="4"></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full btn--lg ripple-btn">
+              <span class="btn-text">Request My Appointment</span>
+              <span class="btn-loading" style="display:none;">Sending...</span>
+            </button>
+            <p class="form-note">By submitting, you agree to be contacted about your dental care. We never share your information.</p>
+          </form>
+          <div class="form-success" id="formSuccess" style="display:none;">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+            <h3>Appointment Request Received!</h3>
+            <p>Thank you! Our team will contact you within 24 hours to confirm your appointment. For urgent needs, call us at <a href="tel:+18005556789">(800) 555-6789</a>.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FAQ ===== -->
+    <section class="faq">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <span class="section-tag">FAQ</span>
+          <h2 class="section-title">Frequently Asked<br /><span class="gradient-text">Questions</span></h2>
+        </div>
+        <div class="faq__list" id="faqList">
+          <div class="faq-item reveal-up">
+            <button class="faq-item__question" aria-expanded="false">Do you accept dental insurance?<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg></button>
+            <div class="faq-item__answer"><p>Yes, we accept most major dental insurance plans including Delta Dental, Cigna, Aetna, MetLife, Guardian, United Concordia, and many more. Our treatment coordinators will verify your benefits before your appointment and ensure you receive the maximum coverage. We also offer flexible in-house payment plans and 0% financing for treatments not fully covered by insurance.</p></div>
+          </div>
+          <div class="faq-item reveal-up" data-delay="50">
+            <button class="faq-item__question" aria-expanded="false">How long does a teeth whitening treatment take?<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg></button>
+            <div class="faq-item__answer"><p>Our in-office professional whitening treatment takes approximately 60–90 minutes. Most patients achieve results 6–8 shades brighter in a single session. We also offer take-home whitening kits with custom-fitted trays for those who prefer gradual whitening over 10–14 days. Results typically last 12–24 months with proper care.</p></div>
+          </div>
+          <div class="faq-item reveal-up" data-delay="100">
+            <button class="faq-item__question" aria-expanded="false">Is Invisalign as effective as traditional braces?<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg></button>
+            <div class="faq-item__answer"><p>For the vast majority of alignment issues — including crowding, spacing, overbites, underbites, and crossbites — Invisalign is equally as effective as traditional braces. As a Diamond-tier Invisalign provider, Dr. Mitchell has successfully treated thousands of cases. Invisalign is virtually invisible, removable for eating and brushing, and more comfortable than metal brackets.</p></div>
+          </div>
+          <div class="faq-item reveal-up" data-delay="150">
+            <button class="faq-item__question" aria-expanded="false">Are dental implants painful?<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg></button>
+            <div class="faq-item__answer"><p>Dental implant surgery is performed under local anaesthesia, so you won't feel pain during the procedure. Most patients report that the discomfort afterward is minimal and manageable with over-the-counter pain relievers. Dr. Carter uses advanced guided implant technology to ensure precision placement with minimal trauma to surrounding tissue.</p></div>
+          </div>
+          <div class="faq-item reveal-up" data-delay="200">
+            <button class="faq-item__question" aria-expanded="false">How many veneers will I need for a smile makeover?<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg></button>
+            <div class="faq-item__answer"><p>The number depends on your smile goals and which teeth are visible when you smile. A full smile makeover typically involves 6–10 upper teeth. We use digital smile design software to show you a preview of your results before any work begins. Some patients only need 2–4 veneers to address specific concerns.</p></div>
+          </div>
+          <div class="faq-item reveal-up" data-delay="250">
+            <button class="faq-item__question" aria-expanded="false">Do you offer emergency dental appointments?<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg></button>
+            <div class="faq-item__answer"><p>Absolutely. Our emergency line is staffed 24 hours a day, 7 days a week. Whether you're experiencing a broken tooth, severe toothache, lost filling, or dental abscess, call us at (800) 555-6789 and we'll get you seen as quickly as possible — often the same day. Existing patients are given priority scheduling for all emergencies.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section class="contact" id="contact">
+      <div class="container contact__grid">
+        <div class="contact__info reveal-left">
+          <span class="section-tag">Find Us</span>
+          <h2 class="section-title">Visit SmileCraft<br /><span class="gradient-text">Dental</span></h2>
+          <div class="contact-item">
+            <div class="contact-item__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 110-5 2.5 2.5 0 010 5z"/></svg></div>
+            <div><strong>Our Location</strong><p>455 Park Avenue, Suite 1200<br />New York, NY 10022</p></div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.11-.27c1.21.49 2.53.76 3.88.76a1 1 0 011 1V20a1 1 0 01-1 1C9.61 21 3 14.39 3 6a1 1 0 011-1h3.5a1 1 0 011 1c0 1.35.27 2.67.76 3.88a1 1 0 01-.27 1.11l-2.37 2.8z"/></svg></div>
+            <div><strong>Phone</strong><p><a href="tel:+18005556789">(800) 555-6789</a><br /><a href="tel:+12125556789">(212) 555-6789</a> (Direct)</p></div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg></div>
+            <div><strong>Email</strong><p><a href="mailto:hello@smilecraftdental.com">hello@smilecraftdental.com</a><br /><a href="mailto:emergencies@smilecraftdental.com">emergencies@smilecraftdental.com</a></p></div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 100 20A10 10 0 0012 2zm0 18a8 8 0 110-16 8 8 0 010 16zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67V7z"/></svg></div>
+            <div><strong>Office Hours</strong>
+              <table class="hours-table">
+                <tr><td>Monday – Friday</td><td>8:00 AM – 7:00 PM</td></tr>
+                <tr><td>Saturday</td><td>9:00 AM – 5:00 PM</td></tr>
+                <tr><td>Sunday</td><td>Emergency Only</td></tr>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="contact__map reveal-right">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.175!2d-73.9710669!3d40.7580162!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258faf61e0f8b%3A0x2e618ac6e59e3ec3!2sPark%20Ave%2C%20New%20York%2C%20NY!5e0!3m2!1sen!2sus!4v1699999999999!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="SmileCraft Dental Location"></iframe>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="container footer__top-grid">
+        <div class="footer__brand">
+          <a href="index.html" class="nav__logo footer__logo">
+            <span class="logo-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" fill="none">
+                <path d="M20 4C13 4 7 10 7 17c0 4.5 2.2 8.5 5.5 11l1.5 8h12l1.5-8C30.8 25.5 33 21.5 33 17c0-7-6-13-13-13z" fill="#3b82f6"/>
+                <path d="M14 17c0-3.3 2.7-6 6-6s6 2.7 6 6" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </span>
+            <span class="logo-text logo-text--light">SmileCraft<span>Dental</span></span>
+          </a>
+          <p>Creating confident smiles through modern dentistry. Located in the heart of New York City, serving patients from around the world since 2006.</p>
+          <div class="footer__social">
+            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="social-link">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+            </a>
+            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="social-link">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+            </a>
+            <a href="https://www.x.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter / X" class="social-link">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+            <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube" class="social-link">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M23.495 6.205a3.007 3.007 0 00-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 00.527 6.205a31.247 31.247 0 00-.522 5.805 31.247 31.247 0 00.522 5.783 3.007 3.007 0 002.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 002.088-2.088 31.247 31.247 0 00.5-5.783 31.247 31.247 0 00-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer__links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Our Services</a></li>
+            <li><a href="#gallery">Smile Gallery</a></li>
+            <li><a href="#testimonials">Patient Reviews</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#appointment">Book Appointment</a></li>
+          </ul>
+        </div>
+        <div class="footer__links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="#services">Teeth Whitening</a></li>
+            <li><a href="#services">Dental Implants</a></li>
+            <li><a href="#services">Porcelain Veneers</a></li>
+            <li><a href="#services">Invisalign®</a></li>
+            <li><a href="#services">Root Canal Therapy</a></li>
+            <li><a href="#services">General Dentistry</a></li>
+            <li><a href="#appointment">Emergency Care</a></li>
+          </ul>
+        </div>
+        <div class="footer__hours">
+          <h4>Office Hours</h4>
+          <table>
+            <tr><td>Mon – Fri</td><td>8:00 AM – 7:00 PM</td></tr>
+            <tr><td>Saturday</td><td>9:00 AM – 5:00 PM</td></tr>
+            <tr><td>Sunday</td><td>Emergency Only</td></tr>
+          </table>
+          <div class="footer__emergency">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-.5-13H13v6l5.25 3.15-.75 1.23L12 14.27V7z"/></svg>
+            24/7 Emergency Line:<br /><a href="tel:+18005556789">(800) 555-6789</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container footer__bottom-inner">
+        <p>© <span id="year"></span> SmileCraft Dental. All rights reserved. | 455 Park Avenue, Suite 1200, New York, NY 10022</p>
+        <div class="footer__legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Accessibility</a>
+          <a href="#">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
